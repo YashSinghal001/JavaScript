@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(0, 136, 255);
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    
+    <script>
+        let colorBox= document.getElementById('box');
+
+box.addEventListener('dblclick',function(){
+    this.style.backgroundColor='red';
+  
+})
+//  click 
+colorBox.addEventListener('click' , function(){
+    this.style.backgroundColor = 'green'
+});
+
+// dbl click 
+colorBox.addEventListener('dblclick' , function(){
+    this.style.backgroundColor = 'blue'
+});
+
+// mouseover
+colorBox.addEventListener('mouseover' , function(){
+    this.style.backgroundColor = 'yellow'
+});
+// mouseout
+colorBox.addEventListener('mouseout' , function(){
+    this.style.backgroundColor = 'black'
+});
+// mouseover
+colorBox.addEventListener('mouseover' , function(){
+    this.style.opacity = .5;
+});
+// mouseup
+colorBox.addEventListener('mouseup' , function(){
+    this.style.backgroundColor = 'red';
+});
+// mouseup
+colorBox.addEventListener('mousedoen' , function(){
+    this.style.backgroundColor = 'blue';
+});
+
+    </script>
+</body>
+</html>

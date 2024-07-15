@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On/Off Bulb</title>
+    <link rel="icon" href="35202516_light_bulb_coloured_outline.jpg">
+    <link
+rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="crossorigin="anonymous"referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="bulb.css">
+</head>
+<body>
+    <h1 style="text-align: center; color: white; margin: 20px 0;">On / Off Bulb</h1>
+    <div class="main">
+        <div class="images">
+            <img src="offBulb.png" alt="" id="img1">
+            <img src="onBulb.png" alt="" id="img2" style="display: none;">
+        </div>
+        <div class="btn">
+            <div class="light-button">
+                <button class="bt" onclick="toggleBulb()">
+                  <div class="light-holder">
+                    <div class="dot"></div>
+                    <div class="light"></div>
+                  </div>
+                  <div class="button-holder">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <p>On / OFF</p>
+                  </div>
+                </button>
+              </div>
+        </div>
+    </div>
+    <script src="bulb.js"> </script>
+</body>
+</html>

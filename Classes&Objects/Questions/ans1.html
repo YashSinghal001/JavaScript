@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Data="Secret Information";
+        class User{
+           constructor(name,email){
+            this.name=name;
+            this.email=email;
+           }
+           viewData(){
+            console.log("Data=",Data);
+           }
+        }
+        let student1obj=new User("Ram","abc@gamil.com");
+        let student2obj=new User("Shyam","xyz@gamil.com");
+        console.log(student1obj);
+        console.log(student1obj.viewData());
+
+        console.log(student2obj);
+        console.log(student2obj.viewData());
+    </script>
+</body>
+</html>

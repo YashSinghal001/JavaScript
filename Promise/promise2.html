@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>promise2</title>
+</head>
+
+<body>
+
+
+  <script>
+    function user(id) {
+      if (typeof id != 'number' || id < 0) {
+        throw Error("Invalid id number ")
+      }
+
+      return new Promise((resolve, reject) => {
+        resolve({
+          id: id,
+          userName: 'Ganesh Dutt'
+        })
+      })
+    }
+
+
+    user(0).then((result) => {
+      console.log(result.userName);
+    }).catch((err) => {
+      console.log(err);
+
+    })
+
+    // Syntax 
+    // Promise.all([..promises..]); Print all promise at once whether it resolve or reject
+
+    // let Aman = Promise.all([
+    //   new Promise(resolve => setTimeout(resolve(1), 3000)),
+    //   new Promise(reject => setTimeout(reject("it's a Error.. "), 2000)),
+    //   new Promise(resolve => setTimeout(resolve(3), 1000))
+    // ])
+
+    // Aman.then(alert);
+
+
+
+
+    // Syntax 
+    // Promise.race([..promises..]); only take first promise either resolve or reject
+
+    // let Aman = Promise.race([
+    //   new Promise(reject => setTimeout(reject("it's a Error.. "), 2000)),
+
+    //   new Promise(resolve => setTimeout(resolve(1), 3000)),
+    //   new Promise(resolve => setTimeout(resolve(3), 1000))
+    // ])
+
+    // Aman.then(alert);
+
+
+
+    // Syntax 
+    // Promise.any([..promises..]); only take first promise that is fulfilled or resolve
+
+    // let Aman = Promise.any([
+    //   new Promise((resolve, reject) => setTimeout(reject("it's a Error.. "), 2000)),
+    //   new Promise((resolve, reject) => setTimeout(reject("it's a Error 2.. "), 5000)),
+    //   new Promise((resolve, reject) => setTimeout(reject("it's a Error 3.. "), 3000)),
+    //   new Promise((resolve, reject) => setTimeout(reject("it's a Error 4.. "), 4000)),
+    //   // new Promise((resolve, reject) => setTimeout(resolve(2), 1000)),
+    //   new Promise((resolve, reject) => setTimeout(resolve(1), 3000))
+
+
+
+    // ])
+
+    // Aman.then(alert);
+
+  </script>
+</body>
+
+</html>

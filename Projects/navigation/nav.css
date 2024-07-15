@@ -1,0 +1,69 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* cutom Scrollbar */
+::-webkit-scrollbar
+{
+  width: 12px;
+  /* height: 100px; */
+  height: 5px!important;
+}
+::-webkit-scrollbar-track
+{
+  background-color: #4b365d;
+  
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(150 85 124);
+
+  border-radius: 10px;
+  height: 5px!important;
+}
+/* cutom Scrollbar */
+.background
+{
+    background-image: url(full-moon-clouds-pink-sky-scenic-aesthetic-4096x2732-1653.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    /* background-color: black; */
+    color: white;
+    justify-content: space-around;
+    padding: 15px 16px;
+    width: 100%;
+    position: fixed;
+
+}
+
+.logo i
+{
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+}
+ul{
+    display: flex;
+    gap: 30px;
+   
+}
+ul li{
+    font-size: 30px;
+    font-weight: 600;
+    list-style: none;
+ 
+}
+.chngecolor
+{background-color: rgb(131 131 131 / 51%);
+    backdrop-filter: blur(8px);
+    color: black;
+    transition: .3s all linear;
+}

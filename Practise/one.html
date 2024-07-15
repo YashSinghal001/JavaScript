@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,32,45,"hello"];
+                // array to  string
+
+        let str=arr.join();
+        console.log(arr);
+        console.log("String:"+str);
+
+
+        let str1="YashSinghal";
+        //string to array
+        let arr1=Array.from(str1);
+        console.log(arr1)
+
+
+//Return  new arry from Set of elment
+
+        let score1=100;
+        let score2=200;
+        let score3=300;
+        let newarr=Array.of(score1,score2,score3);
+        console.log(newarr);
+
+
+        let fruits=["apple","banna","pineapple","Guava"];
+   for(let key of fruits.entries()){
+   console.log(key)
+}
+
+const fruit = ['apple', 'banana', 'orange'];
+fruit.pop();
+console.log(fruit);
+// console.log(fruit);
+// copywhithin
+
+
+
+let data=[4,5,6,7,8,9,10,16];
+// data.copyWithin(2,3);//4,5,7,8,9,9,10,16
+// data.copyWithin(2,3,4);//4,5,7,7,8,9,10,16
+data.copyWithin(2,3,5);//4,5,7,8,8,9,10,16
+data.copyWithin(2,3,6);//4,5,7,8,9,9,10,16
+data.copyWithin(2);//4,5,4,5,8,9
+console.log(data)
+
+
+
+// spilce
+
+let fruit1 = ['apple', 'banana', 'orange', 'kiwi'];
+fruit1.splice(1,2,"jelly");
+console.log(fruit1)
+
+// fill
+let numbers = [14, 432, 56, 44, 533,323,55,77];
+numbers.fill(0, 3, 7);
+ console.log(numbers);
+
+
+
+ let p1=new Promise((resolve,reject)=>{
+console.log("Promise Pending");
+setTimeout(()=>{
+resolve(true);
+},2000);
+});
+
+let p2=new Promise((resove,reject)=>{
+console.log("Promise pending");
+setTimeout(()=>{
+reject(false);
+},2000);
+})
+
+p1.then((value)=>{
+console.log(value)
+}).catch((error)=>{
+console.log(error)
+});
+
+p2.then((value)=>{
+console.log(value)
+}).catch((error)=>{
+console.log(error)
+});
+
+    </script>
+</body>
+</html>

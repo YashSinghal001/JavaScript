@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Your Result</title>
+    <!-- <link rel="stylesheet" href="result.css"> -->
+    <style>
+        .sec1{
+    text-align: center;
+    background: url(https://img.freepik.com/premium-photo/customer-service-satisfaction-concept-customers-are-satisfied-with-services-fivestar-business-company-raising-their-rank-raising-highest-ratings-best-assessment-ranking-idea_721781-172.jpg?w=740);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 26px 0;
+}
+form{
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0px 0px 12px #ff000085;
+    border-radius: 22px;
+    color: yellow;
+    background-color: #d2691e30;
+}
+    </style>
+</head>
+
+<body>
+    <div class="sec1">
+        <h1>Check Your Division</h1>
+        <form>
+            <div class="div">
+                <label>First Name:</label>
+                <input type="text" placeholder="Enter Your First Name">
+            </div>
+            <br>
+            <div class="div">
+                <label>Last Name:</label>
+                <input type="text" placeholder="Enter Your Last Name">
+            </div>
+            <br>
+            <div class="div">
+                <label>Roll No:</label>
+                <input type="text" placeholder="Enter Your Last Name">
+            </div>
+            <h4>Marks</h4>
+            <br>
+            <div class="div">
+                <label>Mathematics Marks:</label>
+                <input type="text" placeholder="Enter Your Maths Marks" id="maths">
+            </div>
+            <br>
+            <div class="div">
+                <label>Physics Marks:</label>
+                <input type="text" placeholder="Enter Your Physics Marks" id="physics">
+            </div>
+            <br>
+            <div class="div">
+                <label>Chemistry Marks:</label>
+                <input type="text" placeholder="Enter Your Chemistry Marks" id="chemistry">
+            </div>
+            <br>
+            <div class="div">
+                <label>Total:</label>
+                <input type="text" id="total">
+            </div>
+            <br>
+            <div class="div">
+                <label>Result</label>
+                <input type="text" placeholder="Result" disabled id="result">
+            </div>
+            <br>
+            <div class="div">
+                <input type="button" value="Get Your Division" onclick="cal()">
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+    let maths = document.getElementById('maths');
+    let physics = document.getElementById('physics');
+    let chemistry = document.getElementById('chemistry');
+    let total = document.getElementById('total');
+    let result = document.getElementById('result');
+
+    function cal() {
+        let a = parseFloat(maths.value);
+        let b = parseFloat(physics.value)
+        let c = parseFloat(chemistry.value);
+
+        let totalMarks = a + b + c;
+        total.value = totalMarks;
+
+        if (totalMarks >= 300) {
+            result.value = "First Division with A+ Grade";
+        } else if (totalMarks >= 200) {
+            result.value = "Second Division with B+ Grade";
+        } else if (totalMarks >= 150) {
+            result.value = "Third Division with C+ Grade";
+        } else {
+            result.value = "Fail";
+        }
+    }
+    </script>
+</body>
+
+</html>

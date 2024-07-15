@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average</title>
+</head>
+<body>
+    <script>
+      let  marks=[85,97,44,37,76,60];
+// let sum=0;
+// let av=0;
+//       marks.forEach((sum,av)=>{
+//          for(let i=0;i<marks.length;i++)
+// {
+//     sum=sum+i;
+// }
+// av=sum/6;
+// console.log(av);
+//       });
+     
+        // let sum=0;
+        // for(let i=0;i<marks.length;i++)
+        // {
+        //     sum=sum+i;
+       
+        // }
+        // let av=sum/6;
+        //     console.log("Average=",av);
+
+let sum=0;
+        for(let val of marks)
+        {
+            sum=sum+val;
+        }
+let avg=sum/marks.length;
+console.log("Average=",avg);
+
+    </script>
+</body>
+</html>

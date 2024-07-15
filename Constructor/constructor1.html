@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// let boy={
+//             name:"Yash",
+//             year:19 ,
+//         }
+//       for( let key in boy)
+//       {
+//         document.writeln(key ,":",boy[key],"<br>");
+        
+//       }
+
+
+
+        function person1(name,age,id)
+        {
+            this.name=name;
+            this.age=age;
+            this.id=id;
+        }
+        let person=new person1("Yash",19,"Devloper")
+        for(let a in person)
+        {
+            document.writeln(a +" : "+person[a]);
+            
+        }
+    </script>
+</body>
+</html>

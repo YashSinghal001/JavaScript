@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong</title>
+</head>
+<body>
+    <script>
+        let d,n,sum;
+        n=prompt("Enter the Number")
+
+        while(n!=0)
+        {
+            d=n%10;
+            d=d*d*d;
+sum=sum+d;
+n=n/10;
+        }
+        if(sum===n)
+        {
+            document.writeln('Armstong Number'); 
+        }
+        else
+        {
+            document.writeln('Not Armstong Number'); 
+        }
+    </script>
+</body>
+</html>

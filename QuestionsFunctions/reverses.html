@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse</title>
+</head>
+<body>
+    <script>
+        function Reverse(n)
+        {
+            let rev,d;
+            d=n%10;
+            rev=rev*10+d;
+            n=n/10;
+            return rev;
+        }
+        let result=Reverse(n=prompt("Enter any number"));
+document.writeln(result);
+    </script>
+</body>
+</html>

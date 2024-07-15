@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Validation </title>
+  <style>
+    #result{
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="" onsubmit="return validateForm()">
+    Email : <input type="text" name="email" id="input"><br> <br>
+    <input type="submit" name="Submit"><br> <br>
+    <p id="result"></p>
+  </form>
+  <script>
+    function validateForm() {
+      var email = document.getElementById('input').value;
+      let result=document.getElementById('result');
+      var atposition = email.indexOf('@');
+      var dotposition = email.lastIndexOf('.');
+      if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2
+        >= email.length) {
+          result.innerHTML="Email is not Correct";
+        return false; // prevent form submission if email is not correct
+      }
+      return true; // allow form submission if email is correct
+    }
+  </script>
+</body>
+
+</html

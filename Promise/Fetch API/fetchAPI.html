@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch API</title>
+</head>
+
+<body>
+  <div id="img">
+
+  </div>
+  <script>
+    // let promise = fetch('text/Tet1.txt');
+    // promise.then((value) => {
+    //   console.log(value.status)
+    //   return value.text();
+    // }).then((data) => {
+    //   console.log(data);
+
+    // }).catch((err) => console.log("can't fetch")
+    // )
+    let promise = fetch('https://jsonplaceholder.typicode.com/todos');
+    promise.then((value) => {
+
+      return value.json();
+    }).then((data) => {
+      for (let a in data) {
+        document.writeln(`${data[a].id} :   ${data[a].title} -  ${data[a].completed} <br>`);
+      }
+
+    }).catch((err) => console.log("can't fetch")
+    )
+  </script>
+</body>
+
+</html>

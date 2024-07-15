@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let a,b,i,min,hcf=1; {
+       a=prompt("Enter any number");
+       b=prompt("Enter any number");
+            min=a<b?a:b;
+            for (i=min;i>=1;i--)
+            {
+                if (a%i==0 && b%i==0)
+                {
+                  hcf=i ;
+                  break;
+                }
+            }
+
+          document.writeln(hcf);
+          ;
+        }
+    </script>
+
+
+
+</body>
+</html>

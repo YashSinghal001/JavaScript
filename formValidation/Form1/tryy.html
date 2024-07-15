@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <!-- Upper Head -->
+        <div class="head">
+            <div class="head1">
+                <img src="https://gomainspring.com/wp-content/uploads/elementor/thumbs/mainspring-logo-cybersecurity-it-services-automation-qjudg0lgsu8o3zserelwpic5pgl0i7mbxusowrykj8.png" alt="" width="300px">
+            </div>
+            <div class="head2">
+                <div class="circle">
+                    <i class="fa-solid fa-magnifying-glass iconstrt"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-envelope iconstrt"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav>
+            <div class="bar" onclick="show()">
+                <i class="fa-solid fa-bars" style="color: #000000;"></i>
+            </div>
+            <div>
+                <ul class="laptopSize">
+                    <li>
+                        <select name="" id="aboutDropdown"></select>
+                    </li>
+                    <li>
+                        <select name="" id="solutionsDropdown"></select>
+                    </li>
+                    <li>
+                        <select name="" id="resourceDropdown"></select>
+                    </li>
+                    <li class="listcontact"><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <ul class="phoneSize">
+                    <li onclick="hide()"><i class="fa-solid fa-xmark" style="font-size: 20px;"></i></li>
+                    <li>
+                        <select name="" id="aboutDropdownPhone"></select>
+                    </li>
+                    <li>
+                        <select name="" id="solutionsDropdownPhone"></select>
+                    </li>
+                    <li>
+                        <select name="" id="resourceDropdownPhone"></select>
+                    </li>
+                    <li class="listcontact"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- BackImgae First -->
+        <section>
+            <div class="container">
+                <div class="backtxt">
+                    <h2 style="font-size: 40px;">Contact Us</h2>
+                </div>
+            </div>
+            <div style="overflow: hidden;">
+                <svg preserveAspectRatio="none" viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" style="fill: #1094cd; width: 100%; height: 30px; transform: scaleX(-1);">
+                    <path d="M1200 120L0 16.48V0h1200v120z" />
+                </svg>
+            </div>
+        </section>
+        <!-- home/about -->
+        <section>
+            <div class="badeg">
+                <p><span style="color: #1094CD;">Home</span> / <span style="color:#48575C;">Contact Us</span></p>
+            </div>
+        </section>
+        <!-- map -->
+        <section>
+            <div class="bdr">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13781.384574923808!2d78.0075008!3d30.28420605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1720264152957!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="mapbelow">
+                <!-- connect -->
+                <div class="connect">
+                    <h3 style="color: rgb(0, 0, 0);">Connect <span style="color:#1094CD ;">With Us</span></h3>
+                    <form action="" onsubmit="return validateForm()">
+                        <label for="firstName">First Name</label><br>
+                        <input type="text" name="firstName" id="firstName"><p id="nameError"></p><br>
+                        <label for="lastName">Last Name</label><br>
+                        <input type="text" name="lastName" id="lastName"><br>
+                        <label for="email">Email Address</label><br>
+                        <input type="email" name="email" id="email" placeholder="Your Email Address"><p id="emailError"></p><br>
+                        <label for="phoneNumber">Phone Number</label><br>
+                        <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Your Phone Number"><p id="numberError"></p><br>
+                        <label for="message">Your Message</label><br>
+                        <textarea name="message" id="message" placeholder="Your Message"></textarea><br>
+                        <label for="service">Which service are you interested in?</label><br>
+                        <select name="service" id="service" class="selectform">
+                            <option value="">Please Select</option>
+                            <option value="Cybersecurity">Cybersecurity</option>
+                            <option value="ProSuite™">ProSuite™</option>
+                            <option value="Automation">Automation</option>
+                            <option value="vCIO">vCIO</option>
+                            <option value="Cost Management">Cost Management</option>
+                            <option value="Support & Help Desk">Support & Help Desk</option>
+                        </select>
+                        <input class="send" type="submit" value="Send Message">
+                    </form>
+                    <div class="btnn">
+                        <div class="protect">
+                            protected by <strong>reCAPTCHA</strong><br>
+                            Privacy - Terms
+                        </div>
+                        <div class="procimg">
+                            <img src="recaptcha-project-browser-transparent-removebg-preview.png" alt="" width="50px">
+                        </div>
+                    </div>
+                </div>
+                <!-- location -->
+                <div class="location">
+                    <div class="blubox">
+                        <div class="blutxt">
+                            <p><strong>MainSpring, Inc.</strong><br>
+                                8 E. Second Street, Suite 205 <br>
+                                Frederick, MD 21701
+                                <br>
+                                <span style="color: #1094CD;">301.948.8077</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="end2">
+            <div class="company">
+                <img src="https://gomainspring.com/wp-content/uploads/elementor/thumbs/mainspring-logo-cybersecurity-it-services-automation-qjudg0lgsu8o3zserelwpic5pgl0i7mbxusowrykj8.png" alt="" width="200px">
+                <h3 class="maininc">MainSpring, Inc.</h3>
+            </div>
+            <div class="address">
+                <p><i class="fa-solid fa-location-dot"></i> 8 E. Second Street, Suite 205 Frederick, MD 21701</p>
+                <br>
+                <p><i class="fa-solid fa-phone"></i> 301.948.8077</p>
+            </div>
+            <div class="contactt">
+                <p><i class="fa-solid fa-envelope"></i> hello@gomainspring.com</p>
+                <div class="iconsend">
+                    <div class="circle">
+                        <i class="fa-brands fa-facebook-f iconstrt"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-brands fa-linkedin-in iconstrt"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-brands fa-x-twitter iconstrt"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-brands fa-youtube iconstrt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="endfooter">
+            <p>&copy; 2024 <a href="#" class="endfoot">MainSpring, Inc.</a> All rights reserved | Designed & Developed by <a class="endfoot" href="#">ONEFIRE</a> | <a class="endfoot" href="#">Privacy Policy.</a></p>
+        </div>
+    </footer>
+    <script src="style.js"></script>
+    <script>
+        const aboutOptions = [
+            { text: 'About', value: 'about.html' },
+            { text: 'Our Teams', value: '' },
+            { text: 'Industries', value: '' },
+            { text: 'Partners & Certificate', value: '' },
+            { text: 'Careers', value: '' }
+        ];
+
+        const solutionsOptions = [
+            { text: 'Solutions', value: '' },
+            { text: 'Cybersecurity', value: '' },
+            { text: 'ProSuite™', value: '' },
+            { text: 'Automation', value: '' },
+            { text: 'vCIO', value: '' },
+            { text: 'Cost Management', value: '' },
+            { text: 'Support & Help Desk', value: '' }
+        ];
+
+        const resourceOptions = [
+            { text: 'Resource', value: '' },
+            { text: 'Blogs', value: '' },
+            { text: 'Media Resources', value: '' },
+            { text: 'Downloads', value: '' },
+            { text: 'News & Events', value: '' }
+        ];
+
+        function populateDropdown(dropdownId, options) {
+            const dropdown = document.getElementById(dropdownId);
+            options.forEach(option => {
+                const opt = document.createElement('option');
+                opt.value = option.value;
+                opt.textContent = option.text;
+                dropdown.appendChild(opt);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            populateDropdown('aboutDropdown', aboutOptions);
+            populateDropdown('solutionsDropdown', solutionsOptions);
+            populateDropdown('resourceDropdown', resourceOptions);
+            populateDropdown('aboutDropdownPhone', aboutOptions);
+            populateDropdown('solutionsDropdownPhone', solutionsOptions);
+            populateDropdown('resourceDropdownPhone', resourceOptions);
+        });
+    </script>
+</body>
+</html>

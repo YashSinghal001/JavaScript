@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promise</title>
+</head>
+
+<body>
+  <p id="demo"></p>
+  <script>
+    function demoDisaplay(data) {
+      document.getElementById('demo').innerHTML = data;
+
+    }
+
+    const myPromise = new Promise((resolve, reject) => {
+      let a = 30;
+      if (a == 30) {
+        resolve("Data match");
+      }
+
+      else {
+        reject("Not match")
+      }
+    });
+
+
+    myPromise.then(
+      function (value) {
+        demoDisaplay(value);
+      },
+      function (error) {
+        demoDisaplay(error);
+      }
+    );
+
+
+    const promise = new Promise((a, b) => {
+      setTimeout(() => {
+        a(1);
+      }, 1000);
+    });
+
+    promise.then((value) => {
+      alert(value)
+
+      return value + 1;
+    }).then((value) => {
+      alert(value)
+      return value + 1;
+    }).then((value) => {
+      alert(value);
+    })
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+</head>
+<body>
+    <script>
+        let prices=[250,645,300,900,50];
+        let idx=0;
+        for( item of prices)
+        {
+            console.log(`Value Of Index=${idx} and Before Discount Prirce=${prices}`);
+            let dis=(item/100)*10;
+            item=item-dis;
+      
+            console.log(`Value Of Index=${idx} and After Discount Prirce=${item}`);
+     
+            idx++;
+        }
+    </script>
+</body>
+</html>

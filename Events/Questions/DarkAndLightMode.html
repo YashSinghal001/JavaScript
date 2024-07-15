@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkAndLightMode.</title>
+    <style>
+        .dark
+        {
+            background-color: black;
+            color: white;
+        }
+        .light
+        {
+        background-color: white;
+        color: black;
+    }
+    </style>
+</head>
+<body>
+    <h1>This is My Website</h1>
+    <button id="mode">Change Mode</button>
+    <script>
+let modebtn=document.querySelector("#mode");
+let body=document.querySelector("body")
+let currenmode="light";
+
+
+modebtn.addEventListener("click", ()=>{
+    // console.log("You Are Trying To Change mode");
+if(currenmode === "light")
+{
+    currenmode="dark";
+    body.classList.add("dark");
+    body.classList.remove("light");
+}
+else
+{
+    currenmode="light";
+    body.classList.add("light");
+    body.classList.remove("dark");
+
+}
+console.log(currenmode);
+});
+
+
+
+
+    </script>
+</body>
+</html>

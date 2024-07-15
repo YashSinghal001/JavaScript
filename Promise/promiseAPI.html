@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API</title>
+</head>
+
+<body>
+  <p id="demo">loading....</p>
+  <button onclick="generateJoke()"> click me</button>
+
+  <script>
+    let jokes = [
+      "Why did the tomato turn red?  It saw the salad dressing.",
+      "Where do hamburgers go dancing?  They go to the meat-ball.",
+      "Why did the drum take a nap? It was beat.",
+      "Why couldn’t the leopard play hide and seek? Because he was always spotted.",
+      "What lights up a soccer stadium? A soccer match.",
+      "How does the ocean say hello? It waves.",
+      "What do you call a couple of chimpanzees sharing an Amazon account? PRIME-mates."
+    ];
+
+    function generateJoke() {
+      const randomIndex = Math.floor(Math.random() * jokes.length)
+
+
+      document.getElementById('demo').textContent = jokes[randomIndex]
+
+    }
+  </script>
+</body>
+
+</html>

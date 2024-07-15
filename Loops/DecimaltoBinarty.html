@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>binary to Decimal</title>
+</head>
+<body>
+    <script>
+        let d=0,i=0,r;
+
+let n=prompt("Enter your number");
+let t=n;
+while (n>0)
+{
+    r=t%10;
+    t=t/10;
+    d=d+r*Math.pow(2,i++);
+}
+document.writeln(d);
+
+    </script>
+</body>
+</html>

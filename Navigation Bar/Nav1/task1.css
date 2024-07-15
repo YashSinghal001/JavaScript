@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.246);
+    backdrop-filter: blur(20px);
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+
+
+  }
+
+  .laptopSize {
+    display: none;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .phoneSize {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.388);
+    height: 100vh;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    transition: all 1s linear !important;
+  }
+
+  .bar {
+    display: flex;
+    font-size: 20px;
+  }
+
+  .section {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .section img {
+    width: 100vw;
+    height: 100vh;
+  }
+
+
+  @media only screen and (min-width:600px) {
+    .laptopSize {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .bar {
+      display: none;
+    }
+
+
+  }

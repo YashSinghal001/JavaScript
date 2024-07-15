@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Alphabetical(str)
+        {
+            let s,i,ch,c;
+            for(s='A';s<='Z';s++)
+            {
+                for(i=0;i<=str.length;i++)
+                {
+                    ch=str.charAt(i);
+                    if(s==ch)
+                    {
+                        c++;
+                    }
+                }
+                if(c!=0)
+                document.writeln(s + " "+ c);
+            c=0;
+                
+            }
+        }
+        let result=Alphabetical("webmaster");
+        document.writeln(result);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+div
+{
+    height: 100px;
+    width: 100px;
+    background-color:rgba(0, 55, 253, 0.675) ;
+}
+#boxed
+{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    color: white;
+}

@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regular Experession</title>
+</head>
+
+<body>
+  <script>
+    let regex1 = new RegExp('pattern');
+    let regex2 = /pattern/;
+
+    let testing1 = 'this is a pattern matching.........'
+
+
+
+    console.log(regex1.test(testing1));
+    console.log(regex2.test(testing1));
+
+    let regex = /\d/
+    let a = 'i am ganesh dutt 12345'
+    console.log(regex.test(a));
+
+
+    let regex3 = /Apple/gi;
+    let str = 'i have an Apple , but my friend has an apple ,Apple'
+    console.log(str.match(regex3));
+
+
+  </script>
+
+</body>
+
+</html>

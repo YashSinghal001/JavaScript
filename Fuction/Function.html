@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     function fun(a){
+    // document.writeln("i am : "+ a)
+    //         }
+    //         fun.call(this, "shivang");
+
+
+    // call()
+    function emp(id, name){
+     this.id = id;
+     this.name = name;
+    }
+
+    function Pemp(id, name , salary){
+       emp.call(this, id, name);
+       this.salary = salary;
+    }
+
+    function Temp(id, name , salary , time){
+        Pemp.call(this, id, name, salary);
+        this.time = time;
+    }
+
+    let pEmp = new Pemp(10001,"Aman",10);
+    let tEmp = new Pemp(454,"shivang",100 , 1);
+
+
+    document.writeln(pEmp.id + " " +pEmp.name + " "+ pEmp.salary );
+
+    document.writeln('<br>' );
+    
+
+
+    document.writeln(tEmp.id + " " +tEmp.name + " "+ tEmp.salary );
+
+
+    // apply()
+    
+
+     
+    </script>
+</body>
+</html>

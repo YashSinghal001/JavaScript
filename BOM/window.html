@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOM</title>
+</head>
+
+<body>
+  <div style="width: 100%;">
+    <img
+      src="https://img.freepik.com/free-photo/majestic-bengal-tiger-walking-wild-staring-with-aggression-generated-by-artificial-intelligence_25030-67058.jpg?t=st=1718019234~exp=1718022834~hmac=5d7d2bcbad8605e28840cbe717b50181ec54a74740c9daba3d5c06462b5d824a&w=996"
+      alt="" width="80vw">
+  </div>
+
+  <script>
+    // Accessing user agent information
+    console.log("User Agent:", window.navigator.userAgent);
+    // Accessing browser version
+    console.log("Browser Version:", window.navigator.appVersion);
+    // Accessing preferred language
+    console.log("Preferred Language:", window.navigator.language);
+
+    // Checking if cookies are enabled
+
+    console.log("Cookies Enabled:", window.navigator.cookieEnabled ? "Yes" :
+      "No")
+
+
+    // Checking online status
+    console.log("Online Status:", window.navigator.onLine ? "Online" : "Offline")
+
+
+
+    // Accessing geolocation service
+    if (window.navigator.geolocation) {
+      console.log("Geolocation is supported.");
+    } else {
+      console.log("Geolocation is not supported.");
+    }
+
+
+    console.log("Screen width:", window.screen.width);
+    console.log("Screen height:", window.screen.height);
+    console.log("Available width:", window.screen.availWidth);
+    console.log("Available height:", window.screen.availHeight);
+    console.log("Color depth:", window.screen.colorDepth);
+    console.log("Pixel depth:", window.screen.pixelDepth);
+    console.log("Orientation:", window.screen.orientation.type);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            background-color: lightcoral;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">first div</div>
+    <div class="box">second div</div>
+    <div class="box">third div</div>
+    <script>
+        let divs=document.querySelectorAll(".box");
+        console.dir(divs);
+    //    console.log(divs[0]);
+
+let idx=1;
+for(let div of divs)
+{
+    div.innerText=`new value ${idx}`;
+    idx++;
+}
+
+
+    // console.log(divs[0].innerText="New value 1");
+    // console.log(divs[1].innerText="New value 2");
+    // console.log(divs[2].innerText="New value 3");
+
+    </script>
+</body>
+</html>

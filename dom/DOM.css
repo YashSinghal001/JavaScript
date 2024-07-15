@@ -1,0 +1,15 @@
+body{
+    background-color: lightcoral;
+}
+#heading
+{
+    color: blue;
+    background-color: rgb(242, 242, 7);
+}
+button{
+color: white;
+background-color: blue;
+border: none;
+padding: 10px 12px;
+border-radius: 6px;
+}

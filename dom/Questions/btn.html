@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<body>
+
+
+    <script>
+let newBtn=document.createElement("button");
+newBtn.innerText="Click Me!";
+console.log(newBtn);
+
+let body=document.querySelector("body");
+body.prepend(newBtn);
+
+newBtn.style.backgroundColor="red";
+newBtn.style.color="white";
+    </script>
+</body>
+</html>

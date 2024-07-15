@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fizzbuzz</title>
+</head>
+<body>
+    <script>
+        let i;
+        for(i=0;i<=100;i++)
+        {
+            if(i%3===0)
+            {
+            document.writeln('Fizz='+i+"<br>");
+        }
+        else if(i%5===0)
+        {
+            document.writeln('Buzz='+i+"<br>");
+        }
+         else if((i%3===0) &&(i%5===0))
+         {
+            document.writeln('FizzBuzz='+i+"<br>");
+            
+         }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun()">Click Me</button>
+    <!-- <p id="Demo">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit a, dolores non doloremque veritatis, at facere eum aspernatur vel fugiat quo corrupti commodi accusamus nam nostrum, excepturi ullam cum ex!</p> -->
+    <script>
+// function fun()
+// {
+//    let a= window.confirm("Hello World");
+//     if(a)
+//     {
+// document.writeln('OK');
+// document.getElementById("Demo").innerText="Ok";
+//     }
+//     else
+//     {
+//         document.writeln('Cancle');
+//         document.getElementById("Demo").innerText="Ok";
+        
+//     }
+// }
+
+
+
+
+
+
+
+let demo =  document.getElementById('demo')
+
+function set()
+{
+//     setTimeout(fun , 3000 , "shivang" )
+
+
+
+// let a = setTimeout(()=>{
+//     demo.innerHTML = "hello shivang"
+// },2000)
+
+// window.clearTimeout(a);
+
+let date=new Date();
+demo.innerHTML=date
+
+}
+setInterval(set,1000)
+    </script>
+</body>
+</html>

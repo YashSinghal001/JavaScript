@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+</head>
+<body>
+    <script>
+        let gameNum=25;
+        let userNum=prompt("Guess The Game Number");
+        
+        while(userNum!=gameNum)//Usernumber must equal the game number
+        {
+            userNum=prompt("You have entered the wrong number .Guess Again");
+        }
+        console.log("Congratulations,You Have Enter The Right Number");
+    </script>
+</body>
+</html>
